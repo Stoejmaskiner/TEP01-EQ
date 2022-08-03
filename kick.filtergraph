@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FILTERGRAPH>
+  <FILTER uid="1" x="0.5" y="0.1" useARA="0">
+    <PLUGIN name="Audio Input" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="JUCE" version="1.0" file="" uniqueId="246006c0"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
+            numOutputs="2" isShell="0" hasARAExtension="0" uid="246006c0"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="disabled"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="2" x="0.25" y="0.1" useARA="0">
+    <PLUGIN name="MIDI Input" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="JUCE" version="1.0" file="" uniqueId="a9e4f9eb"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
+            numOutputs="0" isShell="0" hasARAExtension="0" uid="a9e4f9eb"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="disabled"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="disabled"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="3" x="0.5" y="0.9" useARA="0">
+    <PLUGIN name="Audio Output" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="JUCE" version="1.0" file="" uniqueId="724248cb"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="2"
+            numOutputs="0" isShell="0" hasARAExtension="0" uid="724248cb"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="L R"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="disabled"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="4" x="0.25" y="0.9" useARA="0">
+    <PLUGIN name="MIDI Output" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="JUCE" version="1.0" file="" uniqueId="9d5bbb00"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
+            numOutputs="0" isShell="0" hasARAExtension="0" uid="9d5bbb00"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="disabled"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="disabled"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="6" x="0.32375" y="0.2701612903225806" useARA="0" uiLastX_Normal="254"
+          uiLastY_Normal="325" uiopen_Normal="0">
+    <PLUGIN name="ChowKick" format="VST3" category="Instrument|Synth" manufacturer="chowdsp"
+            version="1.1.1" file="C:\Program Files\Common Files\VST3\ChowKick.vst3\Contents\x86_64-win\ChowKick.vst3"
+            uniqueId="c376fc28" isInstrument="1" fileTime="17cfb7279e0" infoUpdateTime="18264cc5517"
+            numInputs="0" numOutputs="2" isShell="0" hasARAExtension="0"
+            uid="4ea70ddf"/>
+    <STATE>2353.VMjLgfRB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DiM3.iKV0jZLclbpEjKt3xSqX1UgIWPnM1ZIIiXugCaggCRRwDctjFRlQEagkFNFk0azDSV3fjTUQUVTszLHg2S43hPOAUQrI1YvXUV5UEahkGMC8DTEoFUAACQH8VTV8DZ2X0X5gSQgsVVWkkbIIDRwTjQgASUV8DZtj1R1gDdKkicCQUPIUETMEjTZoFLogTcUczXkEkLgQWUrgjYXcEVxU0UYgCR3wTdtj1R1gDdKkicCQUPIUETMEjTZoFLogjcUcTX4UULWoVUwf0Yq0FRlg0UXIWUWkENHIDSzgzTMg1Mn8zMtTETRUDUSYlZFkENHIjXvbWLhsFNvHFLMczXmsFagglKnM1Y2Y0XqASZHY2LBwDLtLDS14xPLYmK40jdTMDSvX1PLECR3sTN1MDUAkTUP0TPRokZvjFR3UULhUVRwDFLzDCVqkjPHESQFEFLUY0Sn4RZKYGR3sTN1MDUAkTUP0TPRokZvjFR3UULhUVTVg0bA0FRlg0UXIWUWkENHIDSzI1TMg1Mn8zMtTETRUDUSYlZFkENHglXq0jLWwVRWk0cIIDRwTjQgASUV8DZXMDSz4xPLYmKCwTdlMES5g0TNICR40DZ2f1S23RUPIUQTMkYpYTV3fDZhsVSxbkbqwVXwkjPHESQFEFLUY0Sn4RZKYGR3sTN1MDUAkTUP0TPRokZvjFR3UULhUVPxDFdQcEVyUEagoGNrgjYXcEVxU0UYgCRBwDcTkFR0MyPOAUQpQUPvPDRuEkUOgFRWkUd3TkXn4BZic1cVM1ZvjFR2MCdLQiZS4DMpMkSxf0TLAiYSwjdHkFR0MyPOAUQpQUPvPDRuEkUOgFRWkUd3TzXuMlQZoWRBgTLEYTXvTkUOglKosDLHg2R4X2PTETRUAUSAIkVpASZHoWRWoUa3TEVyETaHYFVWgkbUcUV3fjTLQmKogTcyLzSPUjZTEDLDgzaQY0SnAUah81XwbUL3XkVoUULhglKnM1Y2Y0XqASZHY2LBwDZ2f1S23RUPIUQTMkYpYTV3fjPig2ZwjUYickVpE0QZglKnM1Y2Y0XqASZHg2LR0DZ2f1S23RUPIUQTMkYpYTV3fjPhgWUwH1ZQ0FRlg0UXIWUWkENHgFSncCZOciKUAkTEQ0TlolQYgCRnI1ZMIyUygiQYsVRBgTLEYTXvTkUOgFRosjcHg2R4X2PTETRUAUSAIkVpASZHQGNVoUdUEyUmAiQig1Mn8zMtTETRUDUSYlZFkENHgVX0sVLhsFNEk0ZMYEVzjDdKkicCQUPIUETMEjTZoFLogDc3XkV4UULWwVRWk0cIg2R4X2PTETRUAUSAIkVpASZHQGNVoUdUEyU5s1QhsVR3sTN1MzXvPiUZQ2XwbkZEYzXmEDdhkVQFE1Z3rVXmAiUYgCRngjYLICVmcmUYUVTVgkdEY0SngjPHMWQFIlcqwVXsgyZgcFLVkENHgFRlomUXYWPWoEciEyUpUjQicFLogDZ2f1S23xZhsVSWkkd3.CU5UjQisVPBIFdUEiXqEkLWo1ZrIldqc0Sn4RZHkicCQEdUEiXqE0QHQWQVE1ZvjFRTsVLY4VTsgjYtbTXvLlUZQGLogzPmESXxLGUZk1brgjYXcUVzEULggGLogzPmo2TWkjPHkVQFM1ZiESX3s1UOgFRBgTLUwlX4sVLgQGLogzcyHESz4RZHkicCQ0YIcEVyUkQisVRxHVN1MDUAkTUP0TPRokZvjFR0U0QiU1cVkULUYTXn4BZic1cVM1ZvjFR1MiPLg1Mn8zMtTETRUDUSYlZFkENHgWXvDkLWoGNrE1ZIIDRwTjQgASUV8DZLkGS1MiPLg1Mn8zMtTETRUDUSYlZFkENHIjXvbWLhsFNEk0ZMYEVzjjPHESQFEFLUY0Sn4RZKgGUogTcyLzSPUjZTEDLDgzaQY0Sn4xUiIWSWkUYMc0X4E0UX8FMrgjYXcEVxU0UYgCRBwDctLUS14xPLYmKCwjchMTSv3xTMMiKo0DZ2f1S23RUPIUQTMkYpYTV3fDZhsVSxbEZ3X0Xz0jUYglKnM1Y2Y0XqASZHY2LBwDZ2f1S23RUPIUQTMkYpYTV3fDZhsVSxbkZEYUX1kjPHESQFEFLUY0Sn4RZKICUogTcyLzSPUjZTEDLDgzaQY0SngzUYkGNqkEdUYkXn4BZic1cVM1ZvjFRw3RZKYmKCwjctjGSyPzPMEiZ40DdhkFR0MyPOAUQpQUPvPDRuEkUOgFRWkUd3TTXuQSLZglKnM1Y2Y0XqASZHY2LBwDZ2f1S23RUPIUQTMkYpYTV3fDZhsVSxbkc3vlX5UjUgsFMFMVcIIDRwTjQgASUV8DZtj1RvfDdKkicCQUPIUETMEjTZoFLogDdUEiXkUTaHYFVWgkbUcUV3fjTLQGSS4DMpMkSznVdMECQS0zLDMTS3gDdKkicCQUPIUETMEjTZoFLogDdUEiXkE0UZ01YFMFZtf1XmcmUisFLogjcyHUSncCZOciKUAkTEQ0TlolQYgCRBMFdqESVkUjUgYWRBgTLEYTXvTkUOgFQosjcHg2R4X2PTETRUAUSAIkVpASZHoWRWoUa3r1X0sVLXsVSsgjYXcEVxU0UYgCRBwDctjFR0MyPOAUQpQUPvPDRuEkUOgFTsI1aiEyUxrlQYo2YrgjYXcEVxU0UYgCRnwDcTkFR0MyPOAUQpQUPvPDRuEkUOglKsI1ZMcUV5kjPHESQFEFLUY0SngTZHU2LC8DTEoFUAACQH8VTV8DZHcUV4gSUgUWTVkEZtf1XmcmUisFLogDdyHDSncCZOcyMBQ0YIcEVyUkQisVRxHVN1k2RPkzUYkWUFMVN1k2RPkzUYkWUFMVYMUzXmE0UYkic4sDTEwlXmAiUYoWUrIVdzLjKt3hKt3hKt3hKtXlTU0DUQAURWoULEYzXqEEUXoWQF4RPDYFTzDzUXkWSG4RPDYmKtnWPt3hKt3hKt3hKJUELPUTPqI1aYcEV5UkQQcVTWgEOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO..</STATE>
+    <LAYOUT>
+      <INPUTS/>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="7" x="0.4925" y="0.5806451612903226" useARA="0">
+    <PLUGIN name="TEP01 - EQ" format="VST3" category="Fx" manufacturer="Stoejmaskiner"
+            version="1.0.0" file="C:\Program Files\Common Files\VST3\TEP01 - EQ.vst3"
+            uniqueId="bde6bf91" isInstrument="0" fileTime="18264ca5a6e" infoUpdateTime="18264cc5517"
+            numInputs="2" numOutputs="2" isShell="0" hasARAExtension="0"
+            uid="46d17278"/>
+    <STATE>191.VMjLgXK....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9XCLt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="L R"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <CONNECTION srcFilter="2" srcChannel="4096" dstFilter="6" dstChannel="4096"/>
+  <CONNECTION srcFilter="6" srcChannel="0" dstFilter="7" dstChannel="0"/>
+  <CONNECTION srcFilter="6" srcChannel="1" dstFilter="7" dstChannel="1"/>
+  <CONNECTION srcFilter="7" srcChannel="0" dstFilter="3" dstChannel="0"/>
+  <CONNECTION srcFilter="7" srcChannel="1" dstFilter="3" dstChannel="1"/>
+</FILTERGRAPH>
