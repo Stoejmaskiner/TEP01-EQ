@@ -166,7 +166,8 @@ bool TEP01EQAudioProcessor::hasEditor() const
 
 juce::AudioProcessorEditor* TEP01EQAudioProcessor::createEditor()
 {
-    return new TEP01EQAudioProcessorEditor (*this);
+    //return new TEP01EQAudioProcessorEditor (*this);
+    return new juce::GenericAudioProcessorEditor(*this);
 }
 
 //==============================================================================
@@ -188,4 +189,67 @@ void TEP01EQAudioProcessor::setStateInformation (const void* data, int sizeInByt
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new TEP01EQAudioProcessor();
+}
+
+
+// MY STUFF
+
+juce::AudioProcessorValueTreeState::ParameterLayout TEP01EQAudioProcessor::create_parameter_layout() {
+
+    juce::AudioProcessorValueTreeState::ParameterLayout layout;
+
+    juce::StringArray slope_options;
+    for (int i = 0; i < 4; i++) {
+        juce::String str;
+        str << (12 + i * 12);
+        str << " db/oct";
+        slope_options.add(str);
+    }
+
+    layout.add(
+        std::make_unique<juce::AudioParameterFloat>(
+            "LOW_CUT_FREQ",
+            "low cut freq",
+            juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 1.f),
+            20.f
+            ),
+        std::make_unique<juce::AudioParameterFloat>(
+            "HIGH_CUT_FREQ",
+            "high cut freq",
+            juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 1.f),
+            20000.f
+            ),
+        std::make_unique<juce::AudioParameterFloat>(
+            "PEAK_FREQ",
+            "peak freq",
+            juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 1.f),
+            750.f
+            ),
+        std::make_unique<juce::AudioParameterFloat>(
+            "PEAK_GAIN",
+            "peak gain",
+            juce::NormalisableRange<float>(-24.f, 24.f, .5f, 1.f),
+            0.f
+            ),
+        std::make_unique<juce::AudioParameterFloat>(
+            "PEAK_Q",
+            "peak Q",
+            juce::NormalisableRange<float>(0.1f, 10.f, .05f, 1.f),
+            1.f
+            ),
+        std::make_unique<juce::AudioParameterChoice>(
+            "LOW_CUT_SLOPE",
+            "low cut slope",
+            slope_options,
+            0
+            ),
+        std::make_unique<juce::AudioParameterChoice>(
+            "HIGH_CUT_SLOPE",
+            "high cut slope",
+            slope_options,
+            0
+            )
+    );
+
+    return layout;
 }
