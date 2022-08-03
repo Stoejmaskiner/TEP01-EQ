@@ -68,7 +68,17 @@ public:
 
 
 private:
-    //==============================================================================
 
+    // a single filter has a slope of 12 dB oct
+    using Filter = juce::dsp::IIR::Filter<float>;
+
+    // up to 4 stages are needed to get 24, 36, 48 dB oct
+    using CutFilter = juce::dsp::ProcessorChain<Filter, Filter, Filter, Filter>;
+
+    using MonoChain = juce::dsp::ProcessorChain<CutFilter, Filter, CutFilter>;
+
+    MonoChain left_chain, right_chain;
+
+    //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TEP01EQAudioProcessor)
 };
